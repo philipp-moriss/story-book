@@ -13,14 +13,38 @@ export const Template = (args) => <Button {...args} />;
     .sbdocs-h1,sbdocs-h2,.sbdocs-h3,.sbdocs-h4,.sbdocs-h5 {
         color : #ff4785;
         margin : 10px 0 !important;
+    }
+
+    .sbdocs-blockquote{
+        border-color: #1EA7FD;
+    }
   `}
 
 </style>
 
 # Что такое Storybook ?
 
+### Вот что такое история :)
 
-### экземпэл истории
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      size: 'large',
+      label: 'Default',
+    }}>
+    {Template.bind({})}
+  </Story>
+   <Story
+      name="Primary"
+      args={{
+          primary: true,
+          label: 'Primary',
+      }}>
+      {Template.bind({})}
+    </Story>
+</Canvas>
+
 
 ```
 export default {
@@ -40,16 +64,14 @@ Primary.args = {
 
 ```
 
-**Зная этот каркас мы можем делать различные  тесты компонент и смотреть как они себя ведут в различных
-ситуациях**
 
-<Canvas>
-  <Story
-    name="Unchecked"
-    args={{
-      size: 'large',
-      label: 'Button',
-    }}>
-    {Template.bind({})}
-  </Story>
-</Canvas>
+
+### А сегодня мы узнаем как делать простые истории а так же :
+
+> [как настраивать аргументы историй](https://storybook.js.org/docs/react/writing-stories/args)
+
+> [как писать документацию](https://storybook.js.org/docs/react/writing-docs/introduction)
+
+> [какие тесты компонент позволяет делать storybook](https://storybook.js.org/docs/react/writing-tests/introduction)
+
+> [интеренсные плагины](https://storybook.js.org/docs/react/addons/introduction)
