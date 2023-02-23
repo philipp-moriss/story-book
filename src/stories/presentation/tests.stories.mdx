@@ -83,4 +83,29 @@ PlayFunctionExampleExample.play = async ({ canvasElement }) => {
 </Canvas>
 
 
+# Snapshot tests
 
+### для них в storybook есть плагин storyshots
+
+> npm install @storybook/addon-storyshots --save-dev
+
+```
+
+import initStoryshots from '@storybook/addon-storyshots';
+initStoryshots();
+
+```
+
+> npm test storybook.test.js
+
+> psss: с 18 реактом работает через велосипед :)
+
+> в случае yarn
+>   "resolutions": {
+        "react-test-renderer": "18.1.0"
+        }
+
+> в случае nmp
+>   "overrides": {
+"react-test-renderer": "18.1.0"
+}

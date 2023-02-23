@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Button Large 1`] = `
+<button
+  className="storybook-button storybook-button--large storybook-button--secondary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Primary 1`] = `
+<button
+  className="storybook-button storybook-button--medium storybook-button--primary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Secondary 1`] = `
+<button
+  className="storybook-button storybook-button--medium storybook-button--secondary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Small 1`] = `
+<button
+  className="storybook-button storybook-button--small storybook-button--secondary"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/PlayFunctionExample Play Function Example Example 1`] = `
+<div>
+  <input
+    className="input--primary"
+    data-testid="input"
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    placeholder="test"
+    style={
+      Object {
+        "borderColor": "pink",
+      }
+    }
+    value=""
+  />
+</div>
+`;
+
+exports[`Storyshots Example/SimpleStore Simple Story Example 1`] = `
+<div
+  className="simple-story"
+>
+  <div
+    className=""
+  >
+    Hello I am 
+    <strong
+      style={
+        Object {
+          "color": "pink",
+        }
+      }
+    >
+      Simple
+    </strong>
+  </div>
+  <div>
+    <img
+      alt="dog"
+      className="simple-story__img"
+      src="https://ih1.redbubble.net/image.1945691679.5388/st,small,507x507-pad,600x600,f8f8f8.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Example/SimpleStore Simple Story Hard 1`] = `
+<div
+  className="simple-story"
+>
+  <div
+    className=""
+  >
+    Hello I am 
+    <strong
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+    >
+      Hard
+    </strong>
+  </div>
+  <div>
+    <img
+      alt="dog"
+      className="simple-story__img"
+      src="https://ih1.redbubble.net/image.2366429407.6011/st,small,507x507-pad,600x600,f8f8f8.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Example/SimpleStore Simple Story Medium 1`] = `
+<div
+  className="simple-story"
+>
+  <div
+    className=""
+  >
+    Hello I am 
+    <strong
+      style={
+        Object {
+          "color": "yellow",
+        }
+      }
+    >
+      Medium
+    </strong>
+  </div>
+  <div>
+    <img
+      alt="dog"
+      className="simple-story__img"
+      src="https://miro.medium.com/max/1400/0*QApnBmO4I59ZGan7"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Example/SimpleStore Simple Story Simple 1`] = `
+<div
+  className="simple-story"
+>
+  <div
+    className=""
+  >
+    Hello I am 
+    <strong
+      style={
+        Object {
+          "color": "green",
+        }
+      }
+    >
+      Simple
+    </strong>
+  </div>
+  <div>
+    <img
+      alt="dog"
+      className="simple-story__img"
+      src="https://ih1.redbubble.net/image.1945691679.5388/st,small,507x507-pad,600x600,f8f8f8.jpg"
+    />
+  </div>
+</div>
+`;
