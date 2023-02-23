@@ -3,8 +3,8 @@ import './PlayFunctionExample.css'
 
 
 type PlayFunctionExampleProps = {
-    placeholder: string,
-    borderColor: string
+    placeholder?: string,
+    borderColor?: string
 }
 
 const PlayFunctionExample : React.FC<PlayFunctionExampleProps> = ({placeholder, borderColor}) => {
@@ -35,7 +35,7 @@ const PlayFunctionExample : React.FC<PlayFunctionExampleProps> = ({placeholder, 
 
 
             {
-                enterValue && <div className={'result-value'}>{enterValue}</div>
+                enterValue && <div className={'result-value'} data-testid={'result-value'}>{enterValue}</div>
             }
         </div>
     );

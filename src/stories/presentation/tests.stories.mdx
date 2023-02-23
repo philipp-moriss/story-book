@@ -1,0 +1,86 @@
+import {Meta, Canvas, Story} from "@storybook/addon-docs";
+import PlayFunctionExample from "../PlayFunctionExample";
+
+
+
+
+<Meta title="Example/presentation/tests" />
+
+export const Template = (args) => <PlayFunctionExample {...args} />;
+
+<style>
+  {`
+    .sbdocs-h1,sbdocs-h2,.sbdocs-h3,.sbdocs-h4,.sbdocs-h5 {
+        color : #ff4785;
+        margin : 10px 0 !important;
+    }
+
+    .sbdocs-blockquote{
+        border-color: #1EA7FD;
+    }
+
+    .sbdocs-img{
+      max-width: 40%;
+    }
+
+    strong {
+      color: #ff4785;
+    }
+  `}
+
+</style>
+
+# Тесты в storybook
+
+![](https://teacherdanmax.files.wordpress.com/2013/09/school-test.png)
+
+
+### есть несколько типов тестирования таких как
+>   [**1. Interaction  tests ( play function ) **](https://storybook.js.org/docs/react/writing-tests/interaction-testing)
+
+>   [**2.  Accessibility  tests**](https://storybook.js.org/docs/react/writing-tests/accessibility-testing)
+
+>   [**3. Snapshot  tests**](https://storybook.js.org/docs/react/writing-tests/snapshot-testing)
+
+
+
+# Tests with play functions
+
+```
+const Template: ComponentStory<typeof PlayFunctionExample> = (args) => <PlayFunctionExample {...args} />;
+
+export const PlayFunctionExampleExample = Template.bind({});
+PlayFunctionExampleExample.args = {
+    placeholder: 'test',
+    borderColor: 'pink',
+};
+PlayFunctionExampleExample.play = async ({ canvasElement }) => {
+
+    const testValueEmail = 'example-email@email.com'
+
+    const canvas= within(canvasElement);
+
+    const emailInput = canvas.getByTestId('input');
+
+    await userEvent.type(emailInput, testValueEmail, {
+        delay: 100,
+    });
+
+    await userEvent.type(emailInput, "{enter}");
+
+    const result = canvas.getByTestId('result-value');
+    expect(result.textContent).toBe(testValueEmail)
+};
+```
+
+
+<Canvas>
+  <Story
+    name='PlayFunctionExampleDoc'
+    args={{}} >
+    {Template.bind()}
+  </Story>
+</Canvas>
+
+
+
