@@ -16,7 +16,7 @@ const Template: ComponentStory<typeof SimpleStory> = (args) => <SimpleStory {...
 export const SimpleStoryExample = Template.bind({});
 SimpleStoryExample.args = {
     levelType: 'Simple',
-    color: 'pink',
+    color: 'black',
 };
 
 export const SimpleStorySimple =  Template.bind({});
@@ -28,13 +28,13 @@ SimpleStorySimple.args = {
 export const SimpleStoryMedium =   Template.bind({});
 SimpleStoryMedium.args = {
     levelType: 'Medium',
-    color: 'yellow',
+    color: 'black',
 };
 
 export const SimpleStoryHard =   Template.bind({});
 SimpleStoryHard.args = {
     levelType: 'Hard',
-    color: 'red',
+    color: 'black',
 };
 
 
