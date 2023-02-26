@@ -96,16 +96,26 @@ initStoryshots();
 
 ```
 
-> npm test storybook.test.js
+> **npm test storybook.test.js**
 
 > psss: с 18 реактом работает через велосипед :)
-
-> в случае yarn
->   "resolutions": {
-        "react-test-renderer": "18.1.0"
-        }
-
-> в случае nmp
->   "overrides": {
-"react-test-renderer": "18.1.0"
+>>в случае yarn
+>>"resolutions": { <br/>
+"react-test-renderer": "18.1.0" <br/>
 }
+>
+>> в случае nmp
+>>  "overrides": { <br/>
+"react-test-renderer": "18.1.0" <br/>
+}
+
+
+# Accessibility tests
+
+### для них тоже в storybook есть плагин storyshots
+
+> **npm install @storybook/addon-a11y --save-dev**
+
+### так же тесты на доступность можно запускать автоматически
+
+> **npm install axe-playwright --save-dev**
