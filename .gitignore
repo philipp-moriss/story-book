@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 /custom-addon/node_modules
+
+/storybook-static
+
 /.pnp
 .pnp.js
 
