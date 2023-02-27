@@ -1,0 +1,22 @@
+{
+  "name": "custom-addon",
+  "version": "1.0.0",
+  "description": "custome addon for story-book ",
+  "main": "dist/preset.js",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js"
+  ],
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@storybook/components": "^6.5.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
