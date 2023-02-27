@@ -10,7 +10,13 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
+    onClick: { action: 'clicked story BTN' }
   },
+  // parameters: {
+  //   actions: {
+  //     handles: ['click'],
+  //   },
+  //},
 } as ComponentMeta<typeof Button>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
