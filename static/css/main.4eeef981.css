@@ -1,0 +1,82 @@
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #0f4465;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+input {
+    display:block;
+    width:100%;
+    max-width: 400px;
+    margin:10px 0;
+    padding:10px;
+}
+.input--primary {
+    border-radius:10px;
+    border: 1px solid #eee;
+    transition: .3s border-color;
+}
+.input--primary:hover {
+    border: 1px solid #aaa;
+}
+
+.simple-story {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.simple-story__img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.todo__wrapper {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #0f4465;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+
+.todo__wrapper-item {
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    line-height: 1.4;
+    border-bottom: 1px #ffff dashed;
+}
+
+
+/*# sourceMappingURL=main.4eeef981.css.map*/
