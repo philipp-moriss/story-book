@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
     "@storybook/preset-create-react-app",
+    "storybook-addon-mock",
     "../custom-addon/dist/preset.js"
   ],
   "framework": "@storybook/react",

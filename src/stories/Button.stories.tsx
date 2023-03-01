@@ -1,7 +1,8 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import {ComponentMeta, ComponentStory, ReactFramework, StoryContext} from '@storybook/react';
 
-import { Button } from './Button';
+import {Button, ButtonProps} from './Button';
+import {PartialStoryFn} from "@storybook/csf/dist/story";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -45,3 +46,21 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+
+
+
+function DecoratorMargin (Story: PartialStoryFn<ReactFramework, ButtonProps>, context : StoryContext<ReactFramework>) {
+  return (
+      <div style={{margin: '3em'}}>
+          <Story {...context.args} />
+      </div>
+  )
+}
+
+export const ButtonWithDecorator = Template.bind({});
+ButtonWithDecorator.args = {
+   ...Primary.args
+}
+ButtonWithDecorator.decorators = [
+  DecoratorMargin
+]
