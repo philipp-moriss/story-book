@@ -1,5 +1,6 @@
 {
   "name": "storybook",
+  "homepage": "https://philipp-moriss.github.io/story-book",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,7 +27,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -73,6 +76,7 @@
     "@storybook/testing-library": "^0.0.13",
     "axe-playwright": "^1.2.3",
     "babel-plugin-named-exports-order": "0.0.2",
+    "gh-pages": "^5.0.0",
     "prop-types": "^15.8.1",
     "storybook-addon-mock": "^3.2.0",
     "webpack": "^5.75.0"
